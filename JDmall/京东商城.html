@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <title>京东商城</title>
+    <link rel="stylesheet" href="css/京东商城.css"/>
+    <style>
+        *{
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+			border: 0;
+        }
+        html{       
+        	font-size: 10vw;
+        }
+        body{		
+			font-size: .2rem;			
+        	background-color: #F3F3F3;		
+        }        
+    </style>
+</head>
+<body>
+<header>
+	<ul id="header">
+    <li class="header-logo">
+	<a href="#"><img src="images/京东.png" alt=""/></a>
+    </li>
+    <li class="extend">
+		<a href="商品搜索.html"><img src="images/放大镜.png" alt=""><label for="search" class="search"></label><input type="text" id="search" name="search" placeholder="搜素京东商品/店铺"></a>
+    </li>
+    <li class="header-user">
+    <a href="京东登录.html"><img src="images/头像 单人头像.png" alt=""></a>
+    </li>
+	</ul>
+</header>
+<div class="back-top"></div>
+<section class="contain">
+<ul class="list">
+	<li><img src="images/轮播1.jpg" alt="" /></li>
+	<li><img src="images/轮播2.jpg" alt="" /></li>
+	<li><img src="images/轮播3.jpg" alt="" /></li>
+	<li><img src="images/轮播4.jpg" alt="" /></li>
+	<li><img src="images/轮播5.jpg" alt="" /></li>
+	<li><img src="images/轮播6.jpg" alt="" /></li>
+	<li><img src="images/轮播7.jpg" alt="" /></li>
+	<li><img src="images/轮播8.jpg" alt="" /></li>
+</ul>
+<ol class="count">
+	<li class="main-count"></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+</ol>
+</section>
+<div class="icon-list">
+	<ul>
+		<li><a href=""><img src="images/icons1.png" alt="" /><p>京东超市</p></a></li>
+		<li><a href=""><img src="images/icons2.png" alt="" /><p>全球购</p></a></li>
+		<li><a href=""><img src="images/icons3.png" alt="" /><p>服装城</p></a></li>
+		<li><a href=""><img src="images/icons4.png" alt="" /><p>生鲜</p></a></li>
+		<li><a href=""><img src="images/icons5.png" alt="" /><p>充值中心</p></a></li>
+		<li><a href=""><img src="images/icons6.png" alt="" /><p>火车票</p></a></li>
+		<li><a href=""><img src="images/icons7.png" alt="" /><p>京东金融</p></a></li>
+		<li><a href=""><img src="images/icons8.png" alt="" /><p>领券</p></a></li>
+		<li><a href=""><img src="images/icons9.png" alt="" /><p>物流查询</p></a></li>
+		<li><a href=""><img src="images/icons10.png" alt="" /><p>我的关注</p></a></li>
+	</ul>
+</div>
+<div class="img-logo"><a href=""><img src="images/横幅.jpg" alt="" /></a></div>
+<div class="jd-news">
+	<a href=""><img src="images/jdnews.png" alt="" /></a>
+	<ul class="news-ul">
+		<li><a href=""><span>大促&ensp;</span>大促取暖电器低至5折，暖心礼券</a></li>
+		<li><a href=""><span>大促&ensp;</span>冬季毛衣特惠，欢迎抢购</a></li>
+		<li><a href=""><span>大促&ensp;</span>各种惊喜礼品，疯狂抢不断</a></li>
+	</ul>		
+	<a href=""><span>更多</span></a>
+</div>
+<div class="outer-kill">
+	<div class="jd-kill">
+		<div class="kill-time">
+			<img src="images/秒表.png" alt="" />
+			<span>京东秒杀</span>
+			<div class="count-down">
+				<div id="kill-hour">09</div>
+				<span>:</span>
+				<div id="kill-minute">30</div>
+				<span>:</span>
+				<div id="kill-second">59</div>
+			</div>
+		</div>
+		<a href="京东秒杀.html" class="more-kill"><span>更多秒杀</span><img src="images/大于.png" alt="" /></a>
+	</div>
+	<ul class="kill-shops">
+		<li><a href="京东秒杀.html"><img src="images/kill1.jpg" alt="" /></a><p>￥99<br/><del>238</del></p></li>
+		<li><a href="京东秒杀.html"><img src="images/kill2.jpg" alt="" /></a><p>￥999<br/><del>888</del></p></li>
+		<li><a href="京东秒杀.html"><img src="images/kill3.jpg" alt="" /></a><p>￥40<br/><del>39</del></p></li>
+		<li class="kill-right"><a href="京东秒杀.html"><img src="images/kill4.jpg" alt="" /></a><p>￥239<br/><del>199</del></p></li>
+	</ul>
+	<section class="clear-float">
+	<div class="copy-style">
+		<a href="">
+		<div><h3>排行榜</h3><small>热卖爆品省心购</small></div>
+		<img src="images/huawei.jpg" alt="" />
+		</a>
+	</div>
+	<div class="copy-sheet">
+		<a href="">
+			<div><h3>闪购</h3><small>品牌限时折扣</small><span>彪马鞋服4折</span></div>
+			<img src="images/paiar.jpg" alt="" />
+		</a>
+	</div>
+	</section>
+</div>
+<section class="love-life"><img src="images/love-life.png" alt="" /></section>
+<section class="clear-float">
+	<div class="copy-style">
+		<a href="">
+		<div><h3>玩3C</h3><small>荣耀畅玩6X</small></div>
+		<img src="images/love-life1.jpg" alt="" />
+		</a>
+	</div>
+	<div class="copy-sheet">
+		<a href="">
+			<div><h3>京东家电</h3><small>爆款提前抢</small><span>周末宅购惠</span></div>
+			<img src="images/jd-ele.jpg" alt="" />
+		</a>
+	</div>
+	<div class="copy-style">
+		<a href="">
+		<div><h3>京东超市</h3><small>山姆店开业</small></div>
+		<img src="images/love-life3.jpg" alt="" />
+		</a>
+	</div>
+	<div class="copy-style">
+		<a href="">
+		<div><h3>爱家</h3><small>家居3件8.8折</small></div>
+		<img src="images/love-life4.jpg" alt="" />
+		</a>
+	</div>
+</section>
+<ul class="lover">
+	<li><a href=""><div><h3>爱宝宝</h3><small>尿裤低至79</small></div><img src="images/love-baby.png" alt="" /></a></li>
+	<li><a href=""><div><h3>爱美丽</h3><small>迪奥变色唇膏</small></div><img src="images/love-smart.png" alt="" /></a></li>
+	<li><a href=""><div><h3>爱吃</h3><small>牛奶买1赠1</small></div><img src="images/love-eat.png" alt="" /></a></li>
+	<li><a href=""><div><h3>爱逛</h3><small>毛呢599-200</small></div><img src="images/love-go.jpg" alt="" /></a></li>
+</ul>
+<div class="outer-player">
+<ol class="list-player">
+	<li><a href=""><img src="images/轮播1.jpg" alt=""></a></li>
+	<li><a href=""><img src="images/轮播2.jpg" alt=""></a></li>
+	<li><a href=""><img src="images/lunbo2.jpg" alt=""></a></li>
+</ol>
+<ol class="player-count">
+	<li class="count-visible"></li>
+	<li></li>
+	<li></li>
+</ol>
+</div>
+<section class="love-life"><img src="images/quality.jpg" alt="" /></section>
+<section class="clear-float">
+	<div class="copy-sheet">
+		<a href="">
+			<div><h3>全球购自营</h3><small>卡西欧经典款</small><span style="background: #952DFF;">户外运动必备</span></div>
+			<img src="images/kxao.jpg" alt="" />
+		</a>
+	</div>
+	<div class="copy-style">
+		<a href="">
+		<div><h3>环球时尚</h3><small>大牌低至3折</small></div>
+		<img src="images/boor.jpg" alt="" />
+		</a>
+	</div>
+	<div class="copy-style">
+		<a href="">
+		<div><h3>健康运动</h3><small>探路者低至3折</small></div>
+		<img src="images/sport.png" alt="" />
+		</a>
+	</div>
+	<div class="copy-sheet">
+		<a href="">
+			<div><h3>奢品大牌</h3><small>万宝龙低至599</small><span style="background: #952DFF;">万宝龙特卖</span></div>
+			<img src="images/wanbl.jpg" alt="" />
+		</a>
+	</div>
+	<div class="copy-sheet">
+		<a href="">
+			<div><h3>珠宝首饰</h3><small>二代蜜蜡挂件</small><span style="background: #952DFF;">触手润滑</span></div>
+			<img src="images/diamo.jpg" alt="" />
+		</a>
+	</div>
+	<div class="copy-style">
+		<a href="">
+		<div><h3>达人精选</h3><small>混搭曡穿正对季</small></div>
+		<img src="images/cloths.jpg" alt="" />
+		</a>
+	</div>	
+</section>
+<div class="outer1">
+<ol class="list1">
+	<li><a href=""><img src="images/lunbo1.jpg" alt=""></a></li>
+	<li><a href=""><img src="images/lunbo2.jpg" alt=""></a></li>
+	<li><a href=""><img src="images/轮播2.jpg" alt=""></a></li>
+</ol>
+<ol class="count1">
+	<li class="visible1"></li>
+	<li></li>
+	<li></li>
+</ol>
+</div>
+<section class="love-life"><img src="images/shop-special.png" alt="" /></section>
+<div class="shop-specific">
+	<div class="copy-style">
+		<a href="">
+		<div><h3>智能生活</h3><small>可读微信信息</small></div>
+		<img src="images/life-time.jpg" alt="" />
+		</a>
+	</div>
+	<ul class="jd-travel">
+		<li><a href=""><div><h3>白条商城</h3><small>0首付加湿器</small></div><img src="images/jiasiqi.jpg" alt="" /></a></li>
+		<li><a href=""><div><h3>京东众筹</h3><small>智能单车</small></div><img src="images/bycle.jpg" alt="" /></a></li>
+	</ul>
+</div>
+<div style="clear: both"></div>
+<div class="shop-specific">
+	<div class="copy-style">
+		<a href="">
+		<div><h3>团购</h3><small>7限时降</small></div>
+		<img src="images/group-buy.jpg" alt="" />
+		</a>
+	</div>
+	<ul class="jd-travel">
+		<li><a href=""><div><h3>京东旅行</h3><small>爱旅行爱生活</small></div><img src="images/jd-lx.jpg" alt="" /></a></li>
+		<li><a href=""><div><h3>电影娱乐</h3><small>五月天演唱会</small></div><img src="images/wuyuet.jpg" alt="" /></a></li>
+	</ul>	
+</div>
+<div style="clear: left"></div>
+<ul class="lover">
+	<li><a href=""><div><h3>爱车生活</h3><small>立减4000元</small></div><img src="images/jipu.jpg" alt="" /></a></li>
+	<li><a href=""><div><h3>陪伴宝宝</h3><small>5折秒杀</small></div><img src="images/merries.jpg" alt="" /></a></li>
+	<li><a href=""><div><h3>清仓二手</h3><small>1折起</small></div><img src="images/clear.jpg" alt="" /></a></li>
+	<li><a href=""><div><h3>京东拍卖</h3><small>精典名品典藏</small></div><img src="images/sdf.jpg" alt="" /></a></li>
+</ul>
+<div class="outer2">
+<ol class="list2">
+	<li><a href=""><img src="images/lunbo11.jpg" alt=""></a></li>
+	<li><a href=""><img src="images/lunbo22.jpg" alt=""></a></li>
+	<li><a href=""><img src="images/轮播2.jpg" alt=""></a></li>
+</ol>
+<ol class="count-sec">
+	<li class="visible-sec"></li>
+	<li></li>
+	<li></li>
+</ol>
+</div>
+<section class="love-life"><img src="images/rfgd.png" alt="" /></section>
+<section class="clear-float">	
+	<div class="copy-style">
+		<a href="">
+		<div><h3>大家电馆</h3><small>最高减1500</small></div>
+		<img src="images/kongdiao.jpg" alt="" />
+		</a>
+	</div>
+	<div class="copy-style">
+		<a href="">
+		<div><h3>手机数码</h3><small>荣耀畅玩6X抢</small></div>
+		<img src="images/huaweiry.jpg" alt="" />
+		</a>
+	</div>	
+	<div class="copy-style">
+		<a href="">
+		<div><h3>美食城</h3><small>跨店3免1</small></div>
+		<img src="images/delicious-city.jpg" alt="" />
+		</a>
+	</div>	
+	<div class="copy-sheet">
+		<a href="">
+			<div><h3>时尚馆</h3><small>毛呢满599减200</small><span style="background: #952DFF;">保暖季</span></div>
+			<img src="images/warm-ji.jpg" alt="" />
+		</a>
+	</div>
+</section>
+<ul class="lover">
+	<li><a href=""><div><h3>中外名酒</h3><small>3件8折</small></div><img src="images/wine.jpg" alt="" /></a></li>
+	<li><a href=""><div><h3>电脑办公</h3><small>5折电脑疯抢</small></div><img src="images/bookcap.jpg" alt="" /></a></li>
+	<li><a href=""><div><h3>鞋靴箱包</h3><small>箱包29元起</small></div><img src="images/cakap.jpg" alt="" /></a></li>
+	<li><a href=""><div><h3>小家电馆</h3><small>低至5折</small></div><img src="images/jiadian.jpg" alt="" /></a></li>
+</ul>
+<ul class="lover">
+	<li><a href=""><div><h3>生鲜</h3><small>猕猴桃1.2</small></div><img src="images/mihout.jpg" alt="" /></a></li>
+	<li><a href=""><div><h3>家装城</h3><small>家纺799-400</small></div><img src="images/famaly.jpg" alt="" /></a></li>
+	<li><a href=""><div><h3>图书音像</h3><small>满300减100</small></div><img src="images/book.jpg" alt="" /></a></li>
+	<li><a href=""><div><h3>个户清洁</h3><small>第二件0元</small></div><img src="images/nvclear.jpg" alt="" /></a></li>
+</ul>
+<section class="love-life"><a href=""><img src="images/dgfs.png" alt="" class="good-shop"/><div class="more-wonderful"><span>更多精彩</span><img src="images/下一个.png" alt=""></div></a></section>
+<section class="clear-float">
+	<div class="nice-shop">
+		<a href="">
+		<strong>精选</strong>
+		<p>20家好店为你精心推荐</p>
+		<img src="images/shoes-left.jpg" alt="">
+		<img src="images/shoes-right.jpg" alt="">
+		<p id="jd-proprietary">探路者京东自营旗舰店</p>
+		</a>
+	</div>
+	<div class="nice-shop">
+		<a href="">
+		<strong>女装</strong>
+		<p>女神教室</p>
+		<img src="images/cloth-left.jpg" alt="">
+		<img src="images/cloth-right.jpg" alt="">
+		<p id="jd-proprietary">森马自营旗舰店</p>
+		</a>
+	</div>
+</section>
+<div class="to-recommend">
+	<p><img src="images/向上.png" alt="">为你推荐</p>
+</div>
+<section>
+	<ul class="recommend-goods">
+		<li>
+		<a href=""><img src="images/11.jpg" alt="">
+			<p>&ensp;索格 床实木小床双人大床松木床带书架功能床 普通高箱床 1.5*2.0米</p>
+			<p>￥2315<small>.00</small><span>看相似</span></p>
+		</a>
+		</li>
+		<li>
+			<a href=""><img src="images/22.jpg" alt="">
+				<p>&ensp;【京东超市】妙洁 增厚平底垃圾袋大号?50cm*60cm（20+4）只3014</p>
+				<p>￥11<small>.90</small><span>看相似</span></p>
+			</a>
+		</li>
+	</ul>
+	<ul class="recommend-goods">
+		<li>
+			<a href=""><img src="images/33.jpg" alt="">
+				<p>&ensp;kay时代  真皮床  现代双人床 皮床 668 1.8*2.0米床+床垫+1柜</p>
+				<p>￥3280<small>.00</small><span>看相似</span></p>
+			</a>
+		</li>
+		<li>
+			<a href=""><img src="images/44.jpg" alt="">
+				<p>&ensp;俞兆林【10双装】袜子男士棉袜精品商务男袜秋冬保暖吸汗中厚男人中筒长袜 净纯棉花织造 商务男士10双装</p>
+				<p>￥49<small>.90</small><span>看相似</span></p>
+			</a>
+		</li>
+	</ul>
+
+	<ul class="recommend-goods">
+		<li>
+			<a href=""><img src="images/55.jpg" alt="">
+				<p>&ensp;TCL XQB50-1678NS 5公斤 全自动波轮洗衣机 模式可调（浅灰色）</p>
+				<p>￥749<small>.00</small><span>看相似</span></p>
+			</a>
+		</li>
+		<li>
+			<a href=""><img src="images/66.jpg" alt="">
+				<p>&ensp;【京东超市】Nestle雀巢全家营养甜奶粉300g（新旧包装交替发货）</p>
+				<p>￥15<small>.90</small><span>看相似</span></p>
+			</a>
+		</li>
+	</ul>
+	<ul class="recommend-goods">
+		<li>
+			<a href=""><img src="images/77.jpg" alt="">
+				<p>&ensp;【京东超市】红星（redstar） 大二锅头56度 500ml*12瓶 整箱装（新老包装随机发货）</p>
+				<p>￥168<small>.00</small><span>看相似</span></p>
+			</a>
+		</li>
+		<li>
+			<a href=""><img src="images/88.jpg" alt="">
+				<p>&ensp;【京东超市】维达（Vinda) 手帕纸 超韧系列 4层纸巾*36包(无香)</p>
+				<p>￥16<small>.90</small><span>看相似</span></p>
+			</a>
+		</li>
+	</ul>
+</section>
+<footer>
+	<div>
+		<a href="#">
+			<img src="images/footer-icon1.png" alt="">
+		</a>
+	</div>
+	<div>
+		<a href="京东分类.html">
+			<img src="images/footer-icon2.png" alt="">
+		</a>
+	</div>
+	<div>
+		<a href="京东购物.html">
+			<img src="images/footer-icon3.png" alt="">
+		</a>
+	</div>
+	<div>
+		<a href="个人中心.html">
+			<img src="images/footer-icon4.png" alt="">
+		</a>
+	</div>
+</footer>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/京东商城.js"></script>
+</body>
+</html>

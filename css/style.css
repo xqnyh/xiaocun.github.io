@@ -841,7 +841,9 @@ body {
 .section-contact .contact-content .right {
     width: 50%
 }
-
+.contact-content p{
+    padding-bottom: 10px;
+}
 .section-contact .contact-content h1 {
     color: #fff;
     margin-bottom: 30px

@@ -1,0 +1,201 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+html{
+    font-size: 15vw;
+}
+body{
+    width: 100vw;
+    background-color: #F0F2F5;
+}
+/*@media only screen and (min-width: 645px){
+    main{
+    width: 640px;
+}
+}
+@media only screen and (max-width: 640px){
+    main{
+    width: 100%;
+}
+}*/
+header{
+    width: 100%;
+    height: .66rem;
+    font-size: .26rem;
+    background-color: #F7F7F7;
+    text-align: center;
+    border-bottom: 1px solid darkgrey;
+}
+header>img{
+    float: left;
+    width: .36rem;
+    margin: .14rem 0 .065rem .075rem;
+}
+#header{
+    color: black;
+    margin-right: .1rem;
+    line-height: .66rem;
+}
+#header-logo{
+    display: inline-block;
+    width: .34rem;
+    height: .34rem;
+    float: right;
+    position: relative;
+    top: 21%;
+    right: 1.8%;
+    background-image: url(../images/jd-sprites.png);
+    background-size: 1000% 1000%;
+    background-position: -1rem 0;
+}
+a{
+    text-decoration: none;
+}
+#hidden{
+	width: 100%;
+	font-size: 0;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: nowrap;		
+	background-color: #444;	
+}
+#hidden div{
+	width: 25%;
+	padding: .05rem 0 .05rem 0;	
+	text-align: center;
+}
+#hidden div>a{
+	color: white;
+	text-decoration: none;
+	font-size: .2rem;
+}
+#hidden div>a>img{
+	width: .58rem;
+	height: .58rem;
+}
+#hidden div>a>span{
+	display: block;
+}
+.login{
+    width: 100%;
+    position: relative;
+}
+.login-back{
+    width: 100%;
+    height: 2.3rem;
+}
+.login-mine{
+    width: 1rem;
+    float: left;
+    border-radius: 50%;
+}
+.information{
+    width: 97%;
+    top: .26rem;
+    left: .26rem;
+    font-size: .3rem;
+    position: absolute;
+    color: white;
+}
+.information p:last-of-type{
+    position: relative;
+    right: .05rem;
+}
+.name{
+    display: inline-block;
+    position: relative;
+    top: .2rem;
+    left: .06rem;
+}
+.name>span{
+    font-size: .37rem;
+}
+.name>p{
+    font-size: .2rem;
+}
+.concerned{
+    /*border: 1px solid red;*/
+    font-size: 0;
+    position: absolute;
+    bottom: .2rem;
+    width: 100%;
+}
+.concerned li{
+    display: inline-block;
+    width: 32.7%;
+    padding: .07rem 0 .07rem 0;
+    margin-right: 0.7%;
+    list-style: none;
+    font-size: .25rem;
+    text-align: center;    
+    background-color: #B84648;
+    opacity:0.6;
+}
+.concerned li:last-of-type{
+    margin-right: 0;
+}
+.concerned li>a{
+    color: white;
+}
+.indent{
+    background-color: white;
+    font-size: .23rem;
+}
+.my-indent{
+    height: .63rem;
+}
+.my-indent a:last-of-type{
+    float: right;
+    color: #888;
+    line-height: .63rem;
+}
+.my-indent a:first-of-type{
+    line-height: .63rem;
+    color: black;
+}
+.my-indent a img{
+    width: .4rem;
+    position: relative;
+    top: .11rem;
+}
+.my-indent a:first-of-type>img{
+    margin: 0 .07rem 0 .07rem;
+}
+.my-indent a:last-of-type>img{
+    float: right;
+}
+.no-goods{
+    font-size: 0;
+    border-top: 2px solid #F0F2F5;
+}
+.no-goods li{
+    display: inline-block;
+    width: 32.8%;    
+    text-align: center;
+    font-size: .2rem;
+}
+.no-goods li>a{
+    color: #666;
+}
+.no-goods li>a>img{
+    width: .36rem;
+}
+.money-back{
+    font-size: 0;
+    border-top: 2px solid #F0F2F5;
+}
+.money-back li{
+    width: 25%;
+    text-align: center;
+    font-size: .22rem;
+    padding: .8rem 0 .1rem 0;
+    display: inline-block;
+}
+.money-back li>a{
+    color: #666;
+}

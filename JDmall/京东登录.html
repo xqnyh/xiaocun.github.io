@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <title>京东登录</title>
+	<link rel="stylesheet" href="css/京东登录.css">	
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/京东登录.js"></script>
+    <style>
+        *{
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+<!--图标大全-->
+<!--http://www.iconfont.cn/search?q=%E4%BA%AC%E4%B8%9C-->
+<header>
+    <img src="images/小于.png" alt="" id="go"/>
+    <span id="header">京东登录</span>    
+</header>
+<main>
+<form action="" class="form-submit">
+	<label for="username"><input type="text" name="username" id="username" placeholder="用户名/邮箱/已验证手机" /></label>
+	<label for="password"><input type="password" name="pwd" id="password" placeholder="请输入密码" onkeyup="textCount(pwd,confirm)"/></label>
+	<div class="pwd-outer">
+		<span class="pwd-clear">×</span>
+	<div class="pwd-div">
+		<span class="pwd-btn"></span>
+		<span class="pwd-text">…</span>
+	</div>
+	</div>
+	<label for="confirm"><input type="text" name="confirm" id="confirm" placeholder="请输入验证码" onkeyup="textCount(pwd,confirm)"/></label>
+	<div class="confirm-div">
+		<span class="confirm-clear">×</span>
+		<img src="images/yzm.jpg" alt="" class="confirm-img" />
+	</div>
+	<button formtarget="_self" onclick="window.open('京东商城.html')">登&ensp;录</button>
+	<label for="radio" class="lab"><img src="images/勾勾.png" alt="" class="week-film"><input type="radio" name="radio" id="radio">&ensp;一个月内免登录</label>
+</form>
+<footer>
+	<div class="pwd-reg-outer">
+		<p style="overflow: hidden;">
+			<a href="" class="pwd-a"><img src="images/锁.png" alt="" class="back-password">&ensp;找回密码</a>
+			<a href="京东注册.html" class="reg-a"><img src="images/注册_手机.png" alt="" class="register">&ensp;快速注册</a>
+		</p>
+	</div>
+	<p class="other-entry"><span></span>&emsp;其他方式登录&emsp;<span></span></p>
+	<section>
+		<div>
+			<a href=""><img src="images/QQ.png" alt="" class="qq-entry"><span>QQ</span></a>
+			<a href=""><img src="images/微信.png" alt="" class="wx-entry"><span>微信</span></a>
+		</div>
+	</section>
+</footer>
+</main>
+</body>
+</html>

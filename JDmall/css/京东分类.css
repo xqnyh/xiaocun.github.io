@@ -1,0 +1,204 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+html{
+    font-size: 10vw;
+    background-color: white;
+}
+body{
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    background-color: #F3F3F3;
+}
+header{
+    width: 100%;
+    height: 45px;
+}
+#header{
+    width: 100%;
+    height: 45px;
+    margin: 0;
+}
+.header-logo{  
+   padding: 0;
+    height: 44px;
+    position: relative;
+    display: inline-block;
+}
+.header-logo img {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 7px;
+    left: 6px;
+}
+.extend{
+  	margin-top: 3px;
+    display: inline-block;
+    text-align: center;
+   
+}
+.extend input{
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    padding-left: 15px;
+    position: relative;
+    font-size: 14px;
+}
+.header-user{    
+ 	padding: 0;
+    height: 44px;
+    text-align: center;
+    position: relative;
+    /*left: 10px;*/
+    /*top: 10px;*/
+    display: inline-block;
+
+}
+#logo{
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    position: relative;
+    right: 1px;
+    top: 9px;
+    background-image: url(../images/jd-sprites.png);
+    background-size: 1000% 1000%;
+    background-position: -78px 0;
+}
+#hidden{
+	width: 100%;
+	font-size: 0;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: nowrap;		
+	background-color: #444;	
+}
+#hidden div{
+	width: 25%;
+	padding: .05rem 0 .05rem 0;	
+	text-align: center;
+}
+#hidden div>a{
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+}
+#hidden div>a>img{
+	width: 25px;
+	height: 25px;
+}
+#hidden div>a>span{
+	display: block;
+}
+main{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+.current{
+	color: orangered;
+}
+.list{
+    background-color: white;
+}
+.list li{
+    width: 75px;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    list-style: none;
+    border-bottom: 1px solid lightgrey;
+}
+.list-text{
+    padding: 6px;
+}
+.copy-img{
+    display: inline-block;
+    width: 100%;
+}
+.copy-img>img{
+    width: 100%;
+}
+.content-thing{
+    /*margin-top: 22px;    */
+}
+.content-thing h4{
+    font-size: 11px;
+}
+.copy-elastic{
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    padding: 10px;
+    background-color: white;
+}
+.commend-first,.commend-second{
+    /*flex-basis: 70px;*/
+    color: gray;
+    text-align: center;
+    font-size: 11px;
+}
+.commend-first>img{
+    width: 55px;
+}
+.commend-second>img{
+    width: 55px;
+}
+.commend-first>p,.commend-second>p{
+    position: relative;
+    top: 13px;
+}
+.rank{
+    overflow: hidden;
+}
+.rank>h4{
+    float: left;
+}
+.rank-find{
+    float: right;
+    position: relative;
+    top: 7px;
+    margin-bottom: 0;
+}
+.down{
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    background-image: url(../images/down.png);
+    background-repeat: no-repeat;
+    background-size: 80% 80%;
+    vertical-align: middle;
+}
+.download{
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    background-image: url(../images/大于.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    vertical-align: middle;
+}
+.delete{
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    background-image: url(../images/download.png);
+    background-repeat: no-repeat;
+    background-size: 80% 80%;
+    vertical-align: middle;
+}
+.list-text{
+    display: none;
+}
+.list-visible{
+    display: inline-block;
+}

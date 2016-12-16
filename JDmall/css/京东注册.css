@@ -1,0 +1,148 @@
+html{
+	font-size: 100px;
+}
+body{
+    font-size: .3rem;
+    background-color: #F3F5F7;
+}
+header{
+    height: .42rem;
+    font-size: .17rem;
+    background-color: #F9F9F9;
+    text-align: center;
+    border-bottom: 1px solid darkgrey;
+}
+header>img{
+    float: left;
+    width: .25rem;
+    margin: .1rem 0 .03rem .1rem;
+}
+#header{
+    margin-right: .1rem;
+    line-height: .42rem;
+}
+.form-submit{
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.gaincode{
+	width: 95%;
+	display: inline-block;
+}
+#tel{
+	width: 79%;
+	float: left;	
+	height: .43rem;	
+	padding-left: .1rem;
+	border-radius: .02rem;
+    margin: .15rem 0 0 0;
+}
+.testgetcode{
+	width: 20%;
+	float: left;
+	position: relative;
+	left: 1%;
+	height: .43rem;
+	border-radius: .02rem;
+    margin: .15rem 0 0 0;
+}
+#username,#password,#confirm{
+    width: 95%;
+    border-radius: .02rem;    
+    height: .43rem;
+}
+#confirm{
+	margin-top: .27rem;
+	padding-left: .1rem;
+}
+#username,#password{
+	margin-top: .15rem;
+	padding-left: .1rem;
+}
+#username[placeholder],#password[placeholder],#confirm[placeholder],#tel[placeholder]{
+    font-size: .15rem;
+}
+#password,#confirm{   
+    width: 95%;
+}
+.pwd-outer{
+    width: .5rem;
+    height: .43rem;
+    text-align: center;
+    right: 4%;
+    bottom: .83rem;
+    position: absolute;
+    background-color: white;
+    border-bottom-right-radius: .06rem;
+    border-top-right-radius: .06rem;
+}
+.pwd-div{
+    width: .5rem;
+    height: .3rem;
+    margin-top: .065rem;
+    display: inline-block;
+    border-radius: .4rem;
+    border: 1px solid gainsboro;
+
+}
+.pwd-btn{
+    display: inline-block;
+    width: .18rem;
+    height: 100%;
+    float: left;
+    border-radius: .4rem;
+    border: 1px solid gainsboro;
+}
+.pwd-text{
+    float: right;
+    color: gainsboro;
+}
+.pwd-clear{
+    position: absolute;
+    font-size: .2rem;
+    bottom: .09rem;
+    right: .47rem;
+    color: #999;
+}
+.confirm-clear{
+    position: absolute;
+    font-size: .2rem;
+    right: .47rem;
+    bottom: .08rem;
+    color: #999;
+}
+.confirm-div{
+    width: .5rem;
+    height: .43rem;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    padding:.06rem 0 .06rem 0;
+    right: 5.5%;
+    top: .27rem;
+    border-bottom-right-radius: .06rem;
+    border-top-right-radius: .06rem;
+}
+.confirm-img{
+    width: .60rem;
+    height: .3rem;
+    border-left: 1px solid gainsboro;
+}
+button{
+    width: 95%;
+    height: .43rem;
+    margin-top: .4rem;
+    font-size: .2rem;
+    background-color: #EEEEEE;
+    color: #888;
+}
+footer{
+	width: 100%;
+	padding-left: 2.5%;
+	margin-top: .16rem;
+	font-size: .07rem;
+}
+footer>a{
+	color: orangered;
+}

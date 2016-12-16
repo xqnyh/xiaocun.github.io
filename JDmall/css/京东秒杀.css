@@ -1,0 +1,219 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+html{
+	font-size: 100px;
+}
+body{
+	width: 100vw;
+    background-color: #F0F2F5;
+}
+header{
+    width: 100%;
+    height: 1.2rem;
+    font-size: .56rem;
+    background-color: #F7F7F7;
+    text-align: center;
+    border-bottom: 1px solid darkgrey;
+}
+header>img{
+    float: left;
+    width: .6rem;
+    margin: .3rem 0 .3rem .09rem;
+}
+#header{
+    color: black;
+    margin-right: .63rem;
+    line-height: 1.2rem;
+}
+#header-logo{
+    display: inline-block;
+    width: .63rem;
+    height: .63rem;
+    float: right;
+    position: relative;
+    top: 23%;
+    right: 1.8%;
+    background-image: url(../images/jd-sprites.png);
+    background-size: 1000% 1000%;
+    background-position: -1.9rem 0;
+}
+a{
+    text-decoration: none;
+}
+#hidden{
+	width: 100%;
+	font-size: 0;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: nowrap;		
+	background-color: #444;	
+}
+#hidden div{
+	width: 25%;
+	padding: .05rem 0 .05rem 0;	
+	text-align: center;
+}
+#hidden div>a{
+	color: white;
+	text-decoration: none;
+	font-size: .37rem;
+}
+#hidden div>a>img{
+	width: .8rem;
+	height: .8rem;
+}
+#hidden div>a>span{
+	display: block;
+}
+.outer-kill{
+	background-color: white;
+	border-bottom: 2px solid lightgray;
+}
+.kill-time{	
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;	
+}
+.kill-time li{
+	list-style: none;	
+	flex-basis: 19%;	
+	font-size: .52rem;
+}
+.kill-time li p{
+	text-align: center;
+}
+.kill-time li p:first-of-type{
+	font-weight: 800;
+	margin: .27rem 0 .04rem 0;
+}
+.kill-time li p:nth-of-type(2){
+	font-size: .4rem;
+}
+.count-down{	
+	font-size: .37rem;	
+	overflow: hidden;
+	margin: .1rem 0 .1rem 0;
+	padding: 0 .1rem 0 .1rem;
+}
+.count-down span{
+	display: inline-block;
+}
+.sec{
+	color: red;
+}
+#count-time{
+	float: right;	
+}
+#count-time span:first-of-type{
+	margin-left: .04rem;
+}
+#count-time span{
+	color: white;
+	padding: 5px;
+	background-color: black;
+}
+
+.copy-style{
+	overflow: hidden;
+	display: none;
+	background-color: white;
+}
+.copy-style li{
+	list-style: none;
+	padding-bottom: .16rem;
+	border-bottom: 2px solid lightgray;
+}
+.copy-elastic{
+	display: flex;
+	justify-content: flex-start;
+}
+.copy-elastic div{
+	flex-basis: 49%;
+}
+.copy-div2{
+	flex-grow: 3;
+}
+.copy-p{
+	color: black;
+	font-size: .43rem;
+}
+.copy-text{
+	display: flex;
+	justify-content: space-between;
+	margin-top: .6rem;
+}
+.copy-text small{
+	font-size: .41rem;	
+}
+.copy-text div:first-of-type{
+	font-size: .6rem;
+	flex-basis: 49%;
+	text-align: left;
+}
+.go-seckill{
+	display: inline-block;
+	width: 1.7rem;
+	height: .73rem;
+	line-height: .73rem;
+	font-size: .45rem;
+	text-align: center;
+	color: white;
+	background-color: red;
+}
+.copy-text div:last-of-type{
+	flex-basis: 49%;
+	flex-grow: 2;
+	text-align: right;
+	padding-right: .2rem;
+}
+.copy-text div:last-of-type del{
+	display: block;
+	margin-top: .1rem;
+	text-align: left;
+	padding-left: .05rem;
+}
+.copy-text del{
+	font-size: .41rem;
+}
+.copy-img{
+	width: 3rem;
+}
+.outer-pro{
+	font-size: 0;
+}
+.outer-pro span{
+	font-size: .37rem;
+	margin-right: .1rem;
+}
+#copy-count{
+	font-size: .41rem;
+}
+progress{
+	width: 2rem;
+	height: .2rem;
+	margin-top: .085rem;
+	float: right;
+}
+.will-seckill{
+	background-color: #52B948;
+}
+progress::-moz-progress-bar{
+	background: orangered;
+}
+progress::-webkit-progress-value{
+	background: orangered;
+}
+.current{
+	color: red;
+}
+.visible{
+	display: block;
+}
+

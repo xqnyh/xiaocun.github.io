@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+	<title>京东注册</title>
+	<link rel="stylesheet" href="css/京东注册.css">
+<style>
+    *{
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+</style>
+</head>
+<body>
+<header>
+    <img src="images/小于.png" alt="" id="go-back"/>
+    <span id="header">京东注册</span>    
+</header>
+		<main>
+<form action="" class="form-submit">
+	<label for="confirm"><input type="text" name="confirm" id="confirm" placeholder="请输入验证码"  onkeyup="textCount(pwd,confirm)"/></label>
+	<div class="confirm-div">
+		<span class="confirm-clear">×</span>
+		<img src="images/yzm.jpg" alt="" class="confirm-img" />
+	</div>
+	<div class="gaincode">
+	<label for="tel"><input type="text" name="telephone" id="tel" value="" placeholder="请输入手机号"/></label>
+	<input type="submit" class="testgetcode" value="获取短信验证码"/>
+	</div>
+	<label for="username"><input type="text" name="username" id="username" placeholder="请输入短信验证码" /></label>
+	<label for="password"><input type="password" name="pwd" id="password" placeholder="请设置6-20位登录密码"  onkeyup="textCount(pwd,confirm)"/></label>
+	<div class="pwd-outer">
+		<span class="pwd-clear">×</span>
+	<div class="pwd-div">
+		<span class="pwd-btn"></span>
+		<span class="pwd-text">…</span>
+	</div>
+	</div>
+	
+	<button>注&ensp;册</button>	
+</form>
+</main>
+<footer>注册即视为同意<a href="">《京东用户注册协议》</a></footer>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/京东注册.js"></script>
+</body>
+</html>

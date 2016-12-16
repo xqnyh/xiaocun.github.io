@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <title>商品搜索</title>
+    <style>
+        *{
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            border: 0;
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 10vw;
+        }
+        body{
+            width: 100vw;
+            background-color: #F8F8F8;
+        }
+        header{
+            width: 100%;
+            height: .84rem;
+            padding-right: .2rem;
+            background-color: #F8F8F8;
+            border-bottom: 1px solid lightgray;
+        }
+        .search-header{
+            width: 100%;
+            overflow: hidden;
+            line-height: .84rem;
+            font-size: .43rem;
+        }
+        .search-header li{
+            float: left;
+            list-style: none;
+        }
+        .search-header li:last-of-type{        	
+            width: 93%;
+            position: relative;
+            top: .08rem;
+        }
+        .search-header li:first-of-type{
+            width: 7%;
+            text-align: center;
+            cursor: default;
+            
+        }    
+        .search-header li:last-of-type>a{
+        	width: 5%;
+        	height: .68rem;
+        	float: left;
+        	text-align: center;        	
+        	border: 1px solid #666;
+        	border-left: none;
+        	border-bottom-right-radius: .08rem;
+            border-top-right-radius: .08rem;
+        	background-color: #F8F8F8;
+        }  
+        .search-header li:last-of-type img{
+            width: .35rem;
+            margin-bottom: .075rem;
+            
+        }
+        .search-header li:last-of-type input{
+            width: 95%;
+            height: .68rem;
+            float: left;           
+            padding-left: .1rem;
+            border-bottom-left-radius: .08rem;
+            border-top-left-radius: .08rem;
+            border: 1px solid #666;
+        }
+        .search-header li:last-of-type input[placeholder]{
+            font-size: .2rem;
+        }
+        .main{
+        	background-color: white;
+        }
+        .main section{
+        	height: .5rem;
+        	font-size: .3rem;
+        	margin-bottom: .25rem;        	
+        }
+        .main section span:first-of-type{
+        	position: relative;
+        	left: .13rem;
+        	
+        }
+        .search-spirits{
+        	width: .3rem;
+        	height: .3rem;
+        	float: right;
+        	display: inline-block;
+        	vertical-align: top;
+        	margin-top: .07rem;
+        	margin-right: .25rem;        	
+        	background-image: url(images/search-sprites.png);
+        	background-size: 300% 300%; 
+        	background-position: -.3rem -.3rem;       	
+        }
+        .elastic{
+        	padding: 0 .1rem 0 .1rem;        	
+        	display: flex;
+        	justify-content: space-around;
+        	flex-wrap: wrap;        	
+        	font-size: .26rem;
+        }
+        .elastic div{
+        	text-align: center;
+        	margin-bottom: .15rem;
+        	flex-basis: 29%;
+            color: #848689;
+        	border-radius: .2rem;
+        	border: 1px solid #777;
+        }
+    </style>
+</head>
+<body>
+<main>
+  <header>
+      <ul class="search-header">
+          <li id="go">×</li>
+          <li>
+              <label for="search"></label>
+              <input type="text" name="search" id="search" placeholder="家纺超极品类目，领券满799减400!">              
+              <a href=""><img src="images/放大镜.png" alt=""></a>
+          </li>         
+      </ul>
+  </header>
+<div class="main">
+<section>
+	<span>热门搜索</span>
+	<span class="search-spirits"></span>
+</section>
+<div class="elastic">
+	<div>风冷冰箱</div>
+	<div>泸州老窖</div>
+	<div>psv</div>
+	<div>冰皮月饼</div>
+	<div>袜子</div>
+	<div>红米note4</div>
+</div>
+</div>
+</main>
+<script>
+	var go = document.getElementById('go');
+	go.onclick = function (){
+		history.go(-1);
+	}
+</script>
+</body>
+</html>

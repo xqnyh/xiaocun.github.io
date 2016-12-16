@@ -1,0 +1,392 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+html{
+    font-size: 10vw;
+    background-color: white;
+}
+body{	
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #F3F3F3;
+}
+header{
+    width: 100%;
+    height: 45px;
+}
+#header{
+    width: 100%;
+    height: 45px;
+}
+.header-logo{
+
+    display: inline-block;
+}
+.header-logo img {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 7px;
+    right: 3px;
+}
+.text{
+    height: 45px;
+    list-style: none;
+    font-size: 14px;
+    text-align: center;
+}
+.text span{
+    line-height: 45px;
+}
+.header-user{
+    list-style: none;
+}
+#logo{
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    position: relative;
+    top: 9px;
+    background-image: url(../images/jd-sprites.png);
+    background-size: 1000% 1000%;
+    background-position: -78px 0;
+}
+.current{
+    font-weight: 700;
+    border-bottom: 1px solid black;
+}
+#hidder{
+	width: 100%;
+	font-size: 0;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: nowrap;		
+	background-color: #444;	
+}
+#hidder div{
+	width: 25%;
+	padding: .05rem 0 .05rem 0;	
+	text-align: center;
+}
+#hidder div>a{
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+}
+#hidder div>a>img{
+	width: 23px;
+	height: 23px;
+}
+#hidder div>a>span{
+	display: block;
+}
+.shop-img{
+    text-align: center;
+    background-color: white;
+}
+.shop-img img{
+    width: 320px;
+    height: 320px;
+}
+.icon-small{
+    width: 28px;
+    height: 14px;
+    font-size: 9px;
+    display: inline-block;
+    background-color: red;
+    color: white;
+}
+.text-left{
+    display: inline-block;
+}
+.text-left span{
+    color: orangered;
+}
+.text-left span:nth-of-type(2){
+    font-size: 20px;
+}
+.price-down{
+    float: right;
+    border: 1px solid lightgray;
+    padding: 2px;
+}
+.extra{
+    color: red;
+}
+.details{
+    background-color: white;
+}
+.copy-style{
+    font-size: 12px;
+    padding: 8px;
+    border-top: 1px solid lightgray;
+}
+.copy-color{
+    color: #999;
+    float: left;
+    margin: 0 4px 0 4px;
+}
+.table-down{
+    width: 15px;
+    height: 15px;
+    float: right;
+    position: relative;
+    bottom: 44px;
+    display: inline-block;
+    background-image: url(../images/product-detail-sprites-mjs.png);
+    background-repeat: no-repeat;
+    background-size: 900% 900%;
+    background-position: 2px 7px;
+}
+.border-need{
+    border: 1px solid orangered;
+    color: red;
+    margin: 0 4px 0 4px;
+}
+.need{
+    margin: 8px 0 0 33px;
+}
+.icon-select{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    float: right;
+    background-image: url(../images/product-detail-sprites-mjs.png);
+    background-repeat: no-repeat;
+    background-size: 900% 900%;
+    background-position: 2px -7px;
+}
+#outer{
+    margin-top: 11px;
+    background-color: white;
+}
+.copy-font{
+    border: 1px solid #666;
+    padding: 4px;
+    font-size: 14px;
+    margin-left: 7px;
+}
+.count-math{
+    height: 27px;
+    display: inline-block;
+}
+#count{
+    width: 35px;
+    height: 26px;
+    vertical-align: top;
+    text-align: center;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+.add{
+    width: 26px;
+    height: 26px;
+    background-image: url("../images/shopping.cart.spirits.icns1.png");
+    background-repeat: no-repeat;
+    background-size: 200% 600%;
+    background-position: 6px -90px;
+    border: 1px solid gray;
+    display: inline-block;
+}
+.minus{
+    width: 26px;
+    height: 26px;
+    background-image: url("../images/shopping.cart.spirits.icns1.png");
+    background-repeat: no-repeat;
+    background-size: 200% 600%;
+    background-position: -18px -108px;
+    border: 1px solid gray;
+    display: inline-block;
+}
+.down{
+    width: 15px;
+    height: 15px;
+    float: right;
+    display: inline-block;
+    background-image: url(../images/product-detail-sprites-mjs.png);
+    background-repeat: no-repeat;
+    background-size: 900% 900%;
+    background-position: 2px 7px;
+}
+.shop-address{
+    margin-top: 12px;
+    font-size: 11px;
+    background-color: white;
+}
+.shop-address li{
+    list-style: none;
+    padding: 8px 0 0 9px;
+}
+.text-color{
+    color: orangered;
+}
+.relative{
+    position: relative;
+}
+.address-icon{
+    width: 14px;
+    height: 14px;
+    margin-left: 20px;
+    position: absolute;
+    display: inline-block;
+    background-image: url(../images/product-detail-sprites-mjs.png);
+    background-repeat: no-repeat;
+    background-size: 900% 900%;
+    background-position: -18px 0;
+}
+.text-color{
+    margin-left: 33px;
+}
+.text-color div{
+	display: inline-block;
+	height: 18px;
+	color: #6A77B6;
+	margin-right: 15px;
+	border: 1px solid #6A77B6;
+}
+.text-color div>img{
+	width: 15px;
+	height: 16px;
+}
+.container-fluid>img{
+	width: 80px;
+	height: 26px;
+	padding: 0;
+}
+.attention{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: nowrap;
+	padding: 10px;
+}
+.attention div{
+	flex-basis: 30%;
+	text-align: center;
+}
+.attention div:nth-of-type(2){
+	border-left: 1px solid lightgrey;
+	border-right: 1px solid lightgrey;
+}
+.attention div p{
+	margin: 0;
+}
+.enter-store{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+}
+.enter-store div{
+	flex-basis: 42%;
+	border-radius: 5px;
+	padding: 6px 0 6px 0;
+	text-align: center;
+	border: 1px solid #999;
+}
+.enter-store div:first-of-type{
+	margin-left: 13px;
+}
+.enter-store div:last-of-type{
+	margin-right: 13px;
+}
+.icon-spirite{
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	margin-right: 5px;
+	vertical-align: middle;
+	border: 1px solid white;
+	background-image: url(../images/product-detail-sprites-mjs.png);
+	background-repeat: no-repeat;
+	background-size: 900% 900%;
+	background-position: -1px -112px;
+}
+.icons-spirite{
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	margin-right: 5px;	
+	vertical-align: baseline;
+	border: 1px solid white;
+	background-image: url(../images/product-detail-sprites-mjs.png);
+	background-repeat: no-repeat;
+	background-size: 900% 900%;
+	background-position: -109px -62px;
+}
+footer{	
+	width: 100%;
+	max-width: 640px;
+	min-width: 320px;
+	position: fixed;	
+	bottom: 0;
+	background-color: #F3F3F3;
+	display: flex;
+	flex-wrap: nowrap;
+}
+.footer-child{
+	width: 50%;	
+	display: flex;
+	align-items: center;
+	justify-content: space-around;	
+}
+.footer-child div{
+	text-align: center;	
+}
+.footer-child div>p{
+	margin-bottom: 0;
+}
+.footer-a{
+	width: 50%;		
+}
+.footer-jimi{
+	width: 22px;
+	height: 21px;
+	display: inline-block;	
+	background-image: url(../images/);
+}
+.footer-jimi{
+	width: 22px;
+	height: 21px;
+}
+.footer-attention{
+	width: 22px;
+	height: 21px;
+}
+.footer-car{
+	width: 22px;
+	height: 21px;
+}
+.footer-a{	
+	display: flex;
+	flex-wrap: nowrap;
+}
+.footer-a a:first-of-type{
+	width: 50%;
+	font-size: 17px;	
+	color: white;
+	text-align: center;
+	line-height: 52px;
+	background-color: gold;
+}
+.footer-a a:last-of-type{
+	width: 50%;
+	font-size: 17px;
+	color: white;
+	text-align: center;
+	line-height: 52px;	
+	background-color: red;
+}
+@media only screen and (max-width: 340px){
+	.footer-a a:first-of-type{		
+		font-size: 15px;
+}
+	.footer-a a:last-of-type{
+		font-size: 15px;
+	}
+}

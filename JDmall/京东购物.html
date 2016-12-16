@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <title>京东购物车</title>
+    <link rel="stylesheet" href="css/京东购物.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/京东购物.js"></script>
+</head>
+<body>
+<header>
+    <img src="images/小于.png" alt="" id="go"/>
+    <span id="header">购物车</span>
+    <span id="header-logo"></span>
+</header>
+<section id="hidden">
+	<div>
+		<a href="#">			
+			<img src="images/首页.png" alt="">
+			<span>首页</span>
+		</a>
+	</div>
+	<div>
+		<a href="京东分类.html">			
+			<img src="images/搜索.png" alt="">
+			<span>分类搜索</span>
+		</a>
+	</div>
+	<div style="background-color: black;">
+		<a href="京东购物.html">			
+			<img src="images/购物车1.png" alt="">
+			<span>购物车</span>
+		</a>
+	</div>
+	<div>
+		<a href="个人中心.html">			
+			<img src="images/我的.png" alt="">
+			<span>我的京东</span>
+		</a>
+	</div>
+</section>
+<section class="safe">
+    <div><img src="images/safe_icon.png" alt=""><span>您正在安全购物环境中，请放心购物</span></div>
+</section>
+<section class="my-list">
+    <div class="header">
+        <div class="icon-condition"><span class="jd-self"></span><span></span><span>京东自营</span></div>
+        <p>您享受满99元免运费服务</p>
+    </div>
+    <div class="jd-shop">
+        <a href="">
+            <div class="icon-p">
+            <span class="icon-over">换购</span>
+            <em class="icon-small"></em>
+            </div>
+            <div class="symb">
+        	<span class="icon-text">活动商品已购满500.00元， 您只需再加价49.00元，即可换购商品</span>        
+            </div>
+            <img src="images/大于.png" alt="">
+        </a>
+    </div>
+	<div>
+		<div class="change-shop"><span>换购商品</span></div>
+		<div style="position: relative;">
+			<section class="elastic-flex">
+			<div class="my-shop">
+			<div class="icon-condition shop-icon"><span class="jd-first"></span></div>
+			<a href="" class="shop-imgs"><img src="images/chuangwei.jpg" alt="" /></a>
+			</div>
+			<div class="shop-detail">
+				<p>创维（Skyworth）32X3 32英寸 窄边蓝光高清节能平板液晶电视（黑色）</p>
+				<p>版本:32英寸</p>
+				<div class="blank"></div>
+				<ul>
+					<li class="shop-price"><small>￥</small><span>1199</span><small>.00</small></li>					
+				</ul>
+			</div>
+			</section>
+			<div class="shopping-count"><span id="minus-first"></span><input type="text" id="count" name="count" value="1"/><span id="add-first"></span></div>
+		</div>
+		<div class="change-shop"><span>编辑</span></div>
+		<p style="font-size: 13px;margin-left: 24px;">小计:￥1199.00</p>
+	</div>
+	<div style="position: relative;margin-top: 20px;">
+			<div class="my-shop">
+			<div class="icon-condition shop-icon"><span class="jd-second"></span></div>
+			<a href="" class="shop-imgs"><img src="images/feilipu.jpg" alt="" /></a>
+			</div>
+			<div class="shop-detail">
+				<p>飞利浦（PHILIPS）55PUF6461/T3 55英寸 流光溢彩 4K超高清智能电视</p>
+				<p>版本:55英寸4K安卓流光溢彩-新款</p>
+				<div class="blank"></div>
+				<ul>
+					<li class="shop-price"><small>￥</small><span>3999</span><small>.00</small></li>					
+				</ul>
+			</div>
+			<div class="shopping-count"><span></span><input type="text" id="count" name="count" value="1"/><span></span></div>
+		</div>
+		<div class="change-shop"><span>编辑</span></div>
+		<div class="gift">
+			<p>[赠品] 电视意外保1年（3000-4000元）<span>×1</span></p>
+			<p>[赠品] 【买就返399元】斐讯K2 1200M智能双频无线路由器 WIFI穿墙 PSG1218<span>×1</span></p>
+		</div>
+</section>
+<section class="my-list">
+    <div class="header">
+        <div class="icon-condition"><span class="monopoly"></span><span id="img-logo"></span><span>联动世纪鞋服专营店</span></div>
+        <p>您享受满99元免运费服务</p>
+    </div>
+    <div class="jd-shop">
+        <a href="">
+            <div class="icon-p">
+            <span class="icon-over">满减</span>
+            <em class="icon-small"></em>
+            </div>
+            <div class="symb">
+        <span class="icon-text">满200.00，即享优惠</span>        
+            </div>
+            <img src="images/大于.png" alt="">
+        </a>
+    </div>
+	<div>
+		<div class="change-shop"><span>换购商品</span></div>
+		<div style="position: relative;">
+			<div class="my-shop">
+			<div class="icon-condition shop-icon"><span class="monopoly-first"></span></div>
+			<a href="" class="shop-imgs"><img src="images/pixie.jpg" alt="" /></a>
+			</div>
+			<div class="shop-detail">
+				<p>古奇天伦男鞋休闲鞋运动板鞋2016秋冬新款商务皮鞋韩版透气驾车鞋A6A0058 黑色 38</p>
+				<p>颜色:黑色 尺码:38</p>
+				<div class="blank"></div>
+				<ul>
+					<li class="shop-price"><small>￥</small><span>193</span><small>.00</small></li>					
+				</ul>
+			</div>
+			<div class="shopping-count"><span></span><input type="text" id="count" name="count" value="1"/><span></span></div>
+		</div>
+		<div class="change-shop"><span>编辑</span></div>
+		<p style="font-size: 13px;margin-left: 24px;">小计:￥193.00</p>
+	</div>		
+</section>
+<footer>
+	<div>
+		<div style="position: relative;bottom: 7px;">
+			<div class="icon-condition" style="text-align: right;"><span class="select-all" style="float: left;"></span><p style="display: inline-block;font-size: 13px;font-weight: bold;">全选</p></div>
+		</div>
+		<div>
+			<p style="margin-top: 6px;"><span style="font-size: 14px;font-weight: 900;">合计:</span><span style="font-size: 11px;font-weight: 800;">￥5391.00</span></p>
+			<p><span style="font-size: 11px;color: gray;">总额:￥5391.00立减￥0.00</span></p>
+		</div>
+	</div>
+	<a href="">去结算(3)</a>
+</footer>
+</body>
+</html>

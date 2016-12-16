@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小米商城</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        html,body{
+            width: 100vw;
+            margin:0;
+            padding:0;
+        }
+        html{
+            font-size: 8vw;
+        }
+        header{
+            width:100vw;
+            position: relative;
+            margin-bottom: 2px;
+            height: 1.1rem;
+        }
+        .xxx{
+            width: 0.4rem;
+            height: 0.4rem;
+            position: absolute;
+            left: 0.5rem;
+            top: 0.3rem;
+        }
+        #search{
+            display: block;
+            height: 1rem;
+            background: none;
+            border:none;
+            cursor: pointer;
+            padding:0;
+            margin:0;
+        }
+        .border{
+            position: relative;
+            bottom: 0.2rem;
+        }
+        header input[placeholder]{
+            font-size: 0.4rem;
+            position: relative;
+            left: 1.2rem;
+        }
+        .item img{
+            width: 100%;
+            max-height: 4.5rem;
+        }
+        .fluid{
+            margin:0 auto;
+            width: 6.46rem;
+            /*height: 5.08rem;*/
+            text-align: center;
+            /*border: 1px solid red;*/
+        }
+       .list{
+           margin-bottom: 3px;
+           width: 32%;
+           /*height: 49%;*/
+           display: inline-block;
+       }
+       @media only screen and (max-width: 750px) {
+           .fluid{
+               width: 100vw;
+           }
+       }
+        section{
+            width: 100vw;
+        }
+        ul{
+            display: flex;
+            justify-content: flex-start;
+            padding-left: 0;
+        }
+       ul img{
+           width: 2.5rem;
+           height: 1.6rem;
+       }
+        ul li{
+            list-style: none;
+        }
+        .span{
+            font-size: 0.33rem;
+
+        }
+        .p{
+            font-size: 0.3rem;
+            opacity: 0.7;
+        }
+        .pric{
+            color: red;
+            font-size: 0.3rem;
+        }
+        .col-lg-3 p{
+            font-size: 0.27rem;
+            margin: 27px 0 27px 0;
+        }
+        footer{
+            width:100vw;
+            background-color: #FFFFFF;
+            position: fixed;
+            bottom: 0;
+            padding-top: 10px;
+            border-top: 1px solid #E0E0E0;
+        }
+        #yejiao{
+            margin:0.04rem 0 0 0;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <a href="#">
+        <img class="xxx" src="img/xxx.png"alt="" >
+        <input type="text" id="search" name="search" placeholder="搜索商品名称">
+    </a>
+    <hr class="border">
+</header>
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="img/lunbotu1.jpg" alt="...">
+            <div class="carousel-caption">
+
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/lunbotu2.jpg" alt="...">
+            <div class="carousel-caption">
+
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="img/lunbotu3.jpg" alt="...">
+            <div class="carousel-caption">
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/lunbotu4.jpg" alt="...">
+            <div class="carousel-caption">
+
+            </div>
+        </div>
+    </div>
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <!--<span class="glyphicon glyphicon-chevron-left"></span>-->
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <!--<span class="glyphicon glyphicon-chevron-right"></span>-->
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<div class="fluid">
+    <a href=""><img class="list" src="img/红米3s.png" alt=""></a>
+    <a href=""><img class="list" src="img/红米3x.png" alt=""></a>
+    <a href=""><img class="list" src="img/红米note3.png" alt=""></a>
+    <a href=""><img class="list" src="img/红米Pro.png" alt=""></a>
+    <a href=""><img class="list" src="img/小米Max.jpg" alt=""></a>
+    <a href=""><img class="list" src="img/小米笔记本Air.jpg" alt=""></a>
+</div>
+<section>
+    <ul>
+        <li>
+            <a href=""><img src="img/红米note4.jpg" alt=""></a>
+        </li>
+        <li>
+            <span class="span">红米Note 4</span>
+            <p class="p">Helio X20 十核旗舰处理器/全金属一体化机身/4100Ah大电量</p>
+            <span class="pric">899元 起</span>
+        </li>
+    </ul>
+</section>
+<section>
+    <ul>
+        <li>
+            <a href=""><img src="img/电视.jpg" alt=""></a>
+        </li>
+        <li>
+            <span class="span">小米笔记本Air</span>
+            <p class="p">轻薄全金属机身/11.5小时超长续航，支持1C快充/FHD全贴合屏幕</p>
+            <span class="pric">3499元 起</span>
+        </li>
+    </ul>
+</section>
+    <section>
+        <ul>
+            <li>
+                <a href=""><img class="dian" src="img/小米电视10.jpg" alt=""></a>
+            </li>
+            <li>
+                <span class="span">小米电视3S 43英寸</span>
+                <p class="p">LG、友达 全高清液晶屏/全金属机身薄至10.9mm/内容丰富/支持壁挂</p>
+                <span class="pric"> 1799元</span>
+            </li>
+        </ul>
+    </section>
+<section>
+    <ul>
+        <li>
+            <a href=""><img src="img/14.jpg" alt=""></a>
+        </li>
+        <li>
+            <span class="span">小米盒子3 增强版</span>
+            <p class="p">全新升级64位 4k网络机顶盒/2GB内存 + 8GB容量/标配小米蓝牙语音体感遥控器</p>
+            <span class="pric">399元</span>
+        </li>
+    </ul>
+</section>
+<section>
+    <ul>
+        <li>
+            <a href=""><img src="img/自行车.jpg" alt=""></a>
+        </li>
+        <li>
+            <span class="span">电助力折叠自行车</span>
+            <p class="p">力矩传感助理/骑行数据监测/便携折叠设计/智能App，出行好帮手</p>
+            <span class="pric">2999元</span>
+        </li>
+    </ul>
+</section>
+<section>
+    <ul>
+        <li>
+            <a href=""><img src="img/小米盒子3.jpg" alt=""></a>
+        </li>
+        <li>
+            <span class="span">小米盒子3</span>
+            <p class="p">全新升级64位 4K网络机顶盒/标配小米蓝牙语音体感遥控器</p>
+            <span class="pric">249元</span>
+        </li>
+    </ul>
+</section>
+<section>
+    <ul>
+        <li>
+            <a href=""><img src="img/机器人.jpg" alt=""></a>
+        </li>
+        <li>
+            <span class="span">变形金刚特别声波</span>
+            <p class="p">小米x孩子宝，为中国粉丝量定制，小米平板即刻变形</p>
+            <span class="pric">169元</span>
+        </li>
+    </ul>
+</section>
+<section>
+    <ul>
+        <li>
+            <a href=""><img src="img/耳机.jpg" alt=""></a>
+        </li>
+        <li>
+            <span class="span">苹果Lightning to USB数据线</span>
+            <p class="p">MFI认证产品/镀金C48端子头，镀锡工艺铜线/支持5V/2.4A电量输出</p>
+            <span class="pric">39元</span>
+        </li>
+    </ul>
+</section>
+
+<footer>
+    <div class="moda col-xs-3 col-sm-3 col-md-3 col-lg-3" style="text-align: center;">
+        <a href="#"><img src="img/ooo.png" alt=""></a>
+        <p id="yejiao">商城</p>
+    </div>
+    <div class="moda col-xs-3 col-sm-3 col-md-3 col-lg-3" style="text-align: center;">
+        <a href="#"><img src="img/ooo.png" alt=""></a>
+        <p id="yejiao">分类</p>
+    </div>
+    <div class="moda col-xs-3 col-sm-3 col-md-3 col-lg-3" style="text-align: center;">
+        <a href="#"><img src="img/ooo.png" alt=""></a>
+        <p id="yejiao">购物车</p>
+    </div>
+    <div class="moda col-xs-3 col-sm-3 col-md-3 col-lg-3" style="text-align: center;">
+        <a href="#"><img src="img/ooo.png" alt=""></a>
+        <p id="yejiao">服务</p>
+    </div>
+</footer>
+</body>
+</html>

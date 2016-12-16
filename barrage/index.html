@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简单的弹幕墙</title>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <style>
+        *{
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;   
+           margin: 0;
+           padding: 0;
+           border: 0;           
+        }
+       html,body{
+           width: 100vw;           
+       }
+       .dm{
+	       	width: 100%;
+	       	height: calc(100vh - 170px);	       	
+	       	position: relative;	
+            background-image: url(img/background.jpg); 
+            background-size: 100% 100%;
+            background-position: center center;
+            background-repeat: no-repeat;     
+       }
+        .send{
+            border: 2px dashed orange;
+            width: 100%;
+            height: 170px;
+            position: fixed;          
+            bottom: 0;
+            text-align: center;
+            background-image: url(img/bottom.jpg);
+            background-size: 100% 100%; 
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+        #barrage{
+            width: 400px;
+            height: 60px;
+            font-size: 22px;
+            margin-top: 30px;
+            border: 1px dotted goldenrod;
+        }
+        .show p{        	
+        	font-size:24px;            	
+        	position:absolute;
+        	/*top:0;
+        	right:0;*/
+        	}
+    </style>
+</head>
+<body>
+<main class='dm'>
+	<section class='show'></section>
+</main>
+<div class='send'>	
+    <input type="text" maxlength="20" name="message" id="barrage" placeholder="输入小于20个字(按Enter发射弹幕)">     
+</div>
+<script language="JavaScript">
+$(function () {
+	$('#barrage').keypress(function (event){
+//    window.event.keyCode IE和谷歌
+//    event.which 兼容火狐
+    var code = event.keyCode ?   event.keyCode : event.which;
+	var text = $('#barrage').val();	
+	if(code == 13){
+		$('.show').append('<p>' + text + '</p>');
+        $('#barrage').val('');
+		Animate();
+		}			
+	});
+});
+function Animate () {	
+	$('.show').find('p').show().each(function () {
+		var left = $('.dm').width() - $(this).width();		
+		var height = $('.dm').height() - $(this).height();
+		var top = (Math.random() * height);
+		$('p').last().css({left:left,top:top});
+		$(this).animate({left: '-' + $(this).width() * 2 + 'px'},10000,function(){
+            $(this).remove();
+        });
+	})
+}
+</script>
+</body>
+</html>
