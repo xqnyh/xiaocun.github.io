@@ -101,40 +101,38 @@ setInterval(function(){
 // }
 // var topMove = new Banner($('.change-text'),'top',3000);
 // var listPlayer = new Banner($('.outer-player'),'left',3000);
-
 //倒计时
-		var hours = document.getElementById('kill-hour');
-		var minutes = document.getElementById('kill-minute');
-        var seconds = document.getElementById('kill-second');      	
-        var h = 9;
-        var m = 30;
-        var s = 59;                     		
-            var myVar = setInterval(function (){
-            	hours.innerHTML = h;
-                seconds.innerHTML = s;
-         		minutes.innerHTML = m;      			
-         		if(0 < s <= 59){
-               		 s--;
-            	 }
-         		 if(s < 0){
-                    s = 59;
-                     m -= 1;
+    var myVar = setInterval(function () {
+        var h = $("#kill-hour").html();
+        var m = $("#kill-minute").html();
+        var s = $("#kill-second").html();
+        if (0 < s < 60) {
+            s--;
+            if (s < 0) {
+                s = 59;
+                m -= 1;
+                if (m < 0) {
+                    m = 59;
+                    h -= 1;
                 }
-         		 if(m < 0){
-         		 	m = 59;
-         		 	h -= 1;
-         		 }         			
-                h < 10 ? hours.innerHTML = '0' + h : hours.innerHTML = h;
-                m < 10 ? minutes.innerHTML = '0' + m : minutes.innerHTML = m;
-  				s < 10 ? seconds.innerHTML = '0' + s : seconds.innerHTML = s;
-                  if(h == 0){
-                      if(m == 0){
-                          clearInterval(myVar);
-                          seconds.innerHTML = '0' + '0';
-                      }
-           	}         
-            },1000); 
+            }
+        }
+        if (h == 0) {
+            if (m == 0) {
+                if (s == 0) {
+                    clearInterval(myVar);
+                    $("#kill-second").html('0' + '0');
+                }
+            }
+        }
+        h < 10 && $("#kill-hour").html().slice(0, 1) == 0 ? $("#kill-hour").html(h) : $("#kill-hour").html("0" + h);
+        if (h < 10 && $("#kill-hour").html().substr(0).length == 1) {
+            $("#kill-hour").html("0" + h);
+        }
+        s == 59 && m < 10 ? $("#kill-minute").html('0' + m) : $("#kill-minute").html(m);
+        s < 10 ? $("#kill-second").html("0" + s) : $("#kill-second").html(s);
 
+    }, 1000);
 function back (){		
 		var div = document.querySelector('.back-top');		
 		var timer;		
